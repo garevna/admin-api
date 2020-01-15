@@ -10,8 +10,6 @@
     "async": "^3.1.0",
     "express": "^4.12.4",
     "express-ws": "^4.0.0",
-    "fs": "^0.0.2",
-    "promise": "^8.0.3",
     "speedtest-net": "^1.6.0",
     "web-socket-router": "^1.6.8",
     "ws": "^7.2.1"
@@ -27,5 +25,11 @@
   "keywords": [
     "node",
     "websocket"
-  ]
+  ],
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.20.0",
+    "nodemon": "^2.0.2"
+  }
 }
