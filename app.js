@@ -4,7 +4,6 @@ const logger = require('morgan')
 const expressWs = require('express-ws')
 
 /** Web Routes */
-const runSpeedTest = require('./routes/speedTest/index.js')
 const { blog, map, content } = require('./routes')
 
 /** Create Express App */
@@ -41,10 +40,8 @@ app.use(express.static(path.join(__dirname, 'public')))
 
 
 /** Set Routes */
-app.ws('/speedtest', runSpeedTest)
 app.use('/blog', blog)
 app.use('/map', map)
-app.use('/content', content)
 
 // Catch 404 and forward
 app.use((req, res) => res.status(404).json({ message: 'Not Found' }))

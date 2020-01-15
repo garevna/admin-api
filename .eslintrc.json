@@ -19,6 +19,7 @@
         "no-console": ["error", {"allow": ["warn", "error"]}],
         "indent": ["error", "tab"],
         "no-tabs": ["error", { "allowIndentationTabs": true }],
-        "no-plusplus": "off"
+        "no-plusplus": "off",
+        "no-underscore-dangle": "off"
     }
   }
