@@ -1,4 +1,4 @@
-const { readFolder } = require('../helpers')
+const { readFolder } = require('./')
 
 async function getFullContent (path, reject) {
 	const content = []

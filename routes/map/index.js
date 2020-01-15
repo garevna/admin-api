@@ -1,12 +1,6 @@
-const express = require('express')
+const router = require('express').Router()
 
-const router = express.Router()
-
-const bodyParser = require('body-parser')
-
-router.use(bodyParser.json())
-
-const readFile = require('../readFile.js')
+const { readFile } = require('../../helpers')
 
 function errorHandler (err, res) {
 	console.warn(err)
