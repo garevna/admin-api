@@ -7,7 +7,7 @@ const expressWs = require('express-ws')
 const webRouter = require('./routes/web')
 const map = require('./routes/map/index.js')
 const runSpeedTest = require('./routes/speedTest/index.js')
-const blog = require('./routes/blog/index.js')
+const { blog } = require('./routes')
 const content = require('./routes/content/index.js')
 
 /** Create Express App */

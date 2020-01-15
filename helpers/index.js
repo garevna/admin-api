@@ -1,3 +1,4 @@
 module.exports = {
-	readFolder: require('./readFolder')
+	readFolder: require('./readFolder'),
+	readFile: require('./readFile')
 }
