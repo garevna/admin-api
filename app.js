@@ -4,7 +4,6 @@ const logger = require('morgan')
 const expressWs = require('express-ws')
 
 /** Web Routes */
-const webRouter = require('./routes/web')
 const map = require('./routes/map/index.js')
 const runSpeedTest = require('./routes/speedTest/index.js')
 const { blog } = require('./routes')
@@ -48,7 +47,6 @@ app.ws('/speedtest', runSpeedTest)
 app.use('/blog', blog)
 app.use('/map', map)
 app.use('/content', content)
-app.use('/', webRouter)
 
 // Catch 404 and forward
 app.use((req, res) => res.status(404).json({ message: 'Not Found' }))
