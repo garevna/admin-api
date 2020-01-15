@@ -4,10 +4,8 @@ const logger = require('morgan')
 const expressWs = require('express-ws')
 
 /** Web Routes */
-const map = require('./routes/map/index.js')
 const runSpeedTest = require('./routes/speedTest/index.js')
-const { blog } = require('./routes')
-const content = require('./routes/content/index.js')
+const { blog, map, content } = require('./routes')
 
 /** Create Express App */
 const app = express()

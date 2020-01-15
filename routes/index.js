@@ -1,4 +1,5 @@
 module.exports = {
 	blog: require('./blog'),
-	content: require('./content')
+	content: require('./content'),
+	map: require('./map')
 }
