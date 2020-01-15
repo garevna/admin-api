@@ -4,7 +4,7 @@ deploy:
   before_script:
     - sed -i "s~<VERSION>~${CI_COMMIT_TAG}~g" .helm/Chart.yaml
   script:
-    - helm upgrade chart .helm --namespace "${KUBE_NAMESPACE}" --install
+    - helm upgrade frontend-api-chart .helm --namespace "${KUBE_NAMESPACE}" --install
   environment:
     name: production
   when: manual
