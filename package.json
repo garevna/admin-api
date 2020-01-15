@@ -4,11 +4,14 @@
   "description": "A simple Node app width fs and ws",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node ./bin/www",
+    "nodemon": "npx nodemon ./bin/www",
+    "lint": "npx eslint ."
   },
   "dependencies": {
     "express": "^4.12.4",
     "express-ws": "^4.0.0",
+    "morgan": "^1.9.1",
     "speedtest-net": "^1.6.0",
     "web-socket-router": "^1.6.8",
     "ws": "^7.2.1"
