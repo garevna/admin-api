@@ -5,7 +5,7 @@ const router = express.Router()
 /** Controllers */
 const { HomeController } = require('../controllers')
 
-/** ROUTES */
+/** Routes */
 router.get('/', HomeController.index)
 
 module.exports = router

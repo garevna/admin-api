@@ -1,8 +1,4 @@
 const express = require('express')
-const Promise = require('promise')
-const async = require('async')
-const path = require('path')
-const fs = require('fs')
 
 const router = express.Router()
 
