@@ -8,10 +8,6 @@ const content = require ('./routes/content/index.js')
 const app = express()
 const expressWs = require('express-ws')(app)
 
-let port = process.env.PORT || 3000
-
-app.disable('x-powered-by')
-
 app.options( "/*", (req, res, next ) => {
   res.header('Access-Control-Allow-Origin', '*')
   res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,PATCH,DELETE,HEADERS,OPTIONS')
@@ -33,16 +29,14 @@ app.use(function(req, res, next) {
 })
 
 
-app.get('/', function(req, res) {
-  res.sendFile(__dirname + '/views/index.html')
-})
+app.get('/', (req, res) => res.sendFile(__dirname + '/views/index.html'))
 
 
 app.ws('/speedtest', runSpeedTest)
 
 app.use ('/blog', blog)
-
-app.listen(port)
-
 app.use ('/map', map)
 app.use ('/content', content)
+
+
+app.listen(3000)

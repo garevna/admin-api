@@ -1,6 +1,6 @@
 {
-  "name": "webSocket",
-  "version": "1.0.1",
+  "name": "dgtek-frontend-api",
+  "version": "1.0.0",
   "description": "A simple Node app width fs and ws",
   "main": "server.js",
   "scripts": {
@@ -17,10 +17,11 @@
     "express-ws": "^4.0.0"
   },
   "engines": {
-    "node": "8.x"
+    "node": "10.x"
   },
   "repository": {
-    "url": "https://glitch.com/edit/#!/dgtek"
+    "type": "git",
+    "url": "git@git.mbunity.dev:dgtek/frontend-api.git"
   },
   "license": "MIT",
   "keywords": [
