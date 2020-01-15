@@ -19,11 +19,11 @@ router.get('/', (req, res) => {
 	).then((response) => res.json(response))
 })
 
-router.get('/:folder/:fileName', bodyParser.text({ type: '*/*' }), (req, res) => {
-	readFile(`./routes/content/files/${req.params.folder}/`, req.params.fileName)
-		.then((content) => res.send(content))
-		.catch((err) => console.warn(err))
-})
+// router.get('/:folder/:fileName', bodyParser.text({ type: '*/*' }), (req, res) => {
+// 	readFile(`./routes/content/files/${req.params.folder}/`, req.params.fileName)
+// 		.then((content) => res.send(content))
+// 		.catch((err) => console.warn(err))
+// })
 
 router.get('/:folder/:subfolder/:fileName', (req, res) => {
 	readFile(`./routes/content/files/${req.params.folder}/${req.params.subfolder}/`, req.params.fileName)
@@ -37,26 +37,26 @@ router.get('/:file', (req, res) => {
 		.catch((err) => res.json({ error: 'File not found' }))
 })
 
-router.post('/:file', bodyParser.text({ type: '*/*' }), (req, res) => {
-	fs.writeFile(`./routes/content/files/${req.params.file}`, req.body, (error) => {
-		if (error) return errorHandler(error, res)
-		return res.json({ status: 'OK' })
-	})
-})
+// router.post('/:file', bodyParser.text({ type: '*/*' }), (req, res) => {
+// 	fs.writeFile(`./routes/content/files/${req.params.file}`, req.body, (error) => {
+// 		if (error) return errorHandler(error, res)
+// 		return res.json({ status: 'OK' })
+// 	})
+// })
 
-router.post('/:folder/:file', bodyParser.text({ type: '*/*' }), (req, res) => {
-	fs.writeFile(`./routes/content/files/${req.params.folder}/${req.params.file}`, req.body, (error) => {
-		if (error) return errorHandler(error, res)
-		return res.json({ status: 'OK' })
-	})
-})
+// router.post('/:folder/:file', bodyParser.text({ type: '*/*' }), (req, res) => {
+// 	fs.writeFile(`./routes/content/files/${req.params.folder}/${req.params.file}`, req.body, (error) => {
+// 		if (error) return errorHandler(error, res)
+// 		return res.json({ status: 'OK' })
+// 	})
+// })
 
-router.post('/:folder/:subfolder/:file', bodyParser.text({ type: '*/*' }), (req, res) => {
-	fs.writeFile(`./routes/content/files/${req.params.folder}/${req.params.subfolder}/${req.params.file}`, req.body, (error) => {
-		if (error) return errorHandler(error, res)
-		return res.json({ status: 'OK' })
-	})
-})
+// router.post('/:folder/:subfolder/:file', bodyParser.text({ type: '*/*' }), (req, res) => {
+// 	fs.writeFile(`./routes/content/files/${req.params.folder}/${req.params.subfolder}/${req.params.file}`, req.body, (error) => {
+// 		if (error) return errorHandler(error, res)
+// 		return res.json({ status: 'OK' })
+// 	})
+// })
 
 
 module.exports = router
