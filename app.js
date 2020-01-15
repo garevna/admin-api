@@ -18,32 +18,27 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: false }))
 app.use(express.static(path.join(__dirname, 'public')))
 
-// app.options('/*', (req, res) => {
-// 	res.header('Access-Control-Allow-Origin', '*')
-// 	res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,PATCH,DELETE,HEADERS,OPTIONS')
-// 	res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With')
-// 	res.sendStatus(200)
-// })
+/** Disable Cors */
+app.options('/*', (req, res) => {
+	res.header('Access-Control-Allow-Origin', '*')
+	res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,PATCH,DELETE,HEADERS,OPTIONS')
+	res.header('Access-Control-Allow-Headers', 'Content-Type, Authorization, Content-Length, X-Requested-With')
+	res.sendStatus(200)
+})
 
-// app.use((req, res, next) => {
-// 	res.header('Access-Control-Allow-Origin', req.headers.origin)
-// 	res.header(
-// 		'Access-Control-Allow-Methods',
-// 		'GET, POST, OPTIONS, PUT, PATCH, DELETE, HEAD'
-// 	)
-// 	res.header(
-// 		'Access-Control-Allow-Headers',
-// 		'Origin, X-Requested-With, Content-Type, Accept'
-// 	)
-// 	next()
-// })
+app.use((req, res, next) => {
+	res.header('Access-Control-Allow-Origin', req.headers.origin)
+	res.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE, HEAD')
+	res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
+	next()
+})
 
 
 /** Set Routes */
 app.use('/blog', blog)
 app.use('/map', map)
 
-// Catch 404 and forward
+// Catch 404 and return JSON
 app.use((req, res) => res.status(404).json({ message: 'Not Found' }))
 
 // Error handler
