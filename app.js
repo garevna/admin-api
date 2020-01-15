@@ -4,7 +4,7 @@ const logger = require('morgan')
 const expressWs = require('express-ws')
 
 /** Web Routes */
-const { blog, map, content } = require('./routes')
+const { blog, map } = require('./routes')
 
 /** Create Express App */
 const app = express()

@@ -1,10 +1,8 @@
-const { readFile } = require('../helpers')
+const BaseController = require('./BaseController')
 
-class BlogController {
-	index (req, res) {
-		readFile(`${__dirname}/../storage/blog/news/`, 'news.json')
-			.then((json) => res.send(json))
-			.catch((err) => res.json({ error: err.message }))
+class BlogController extends BaseController {
+	async index (req, res) {
+		return res.json(await this._readFileFromStorage('blog/news.json'))
 	}
 }
 
