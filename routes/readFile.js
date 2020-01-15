@@ -1,6 +1,4 @@
 const fs = require('fs')
-const Promise = require('promise')
-const async = require('async')
 
 function readFile (path, name) {
 	return new Promise(

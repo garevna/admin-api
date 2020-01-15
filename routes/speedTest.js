@@ -15,7 +15,7 @@ function readHistory () {
 }
 
 async function saveHistory (testResults) {
-	console.log('\nTEST RESULTS:\n', testResults)
+	console.warn('\nTEST RESULTS:\n', testResults)
 	const history = JSON.parse(await readHistory())
 	history.push({
 		date: new Date().toLocaleString(),

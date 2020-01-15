@@ -13,7 +13,7 @@ router.use(bodyParser.json())
 const readFile = require('../readFile.js')
 
 function errorHandler (err, res) {
-	console.log(err)
+	console.warn(err)
 	res.json({ error: err })
 }
 

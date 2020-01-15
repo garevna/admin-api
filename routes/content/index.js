@@ -1,21 +1,13 @@
 const express = require('express')
-const Promise = require('promise')
-const async = require('async')
-const path = require('path')
 const fs = require('fs')
 
 const router = express.Router()
 
-const bodyParser = require('body-parser')
-
-router.use(bodyParser.json())
-
-const readFolder = require('../readFolder.js')
 const readFile = require('../readFile.js')
 const getFullContent = require('../getFullContent.js')
 
 function errorHandler (err, res) {
-	console.log(err)
+	console.warn(err)
 	res.json({ error: err })
 }
 
@@ -30,13 +22,13 @@ router.get('/', (req, res) => {
 router.get('/:folder/:fileName', bodyParser.text({ type: '*/*' }), (req, res) => {
 	readFile(`./routes/content/files/${req.params.folder}/`, req.params.fileName)
 		.then((content) => res.send(content))
-		.catch((err) => console.log(err))
+		.catch((err) => console.warn(err))
 })
 
 router.get('/:folder/:subfolder/:fileName', (req, res) => {
 	readFile(`./routes/content/files/${req.params.folder}/${req.params.subfolder}/`, req.params.fileName)
 		.then((content) => res.send(content))
-		.catch((err) => console.log(err))
+		.catch((err) => console.warn(err))
 })
 
 router.get('/:file', (req, res) => {

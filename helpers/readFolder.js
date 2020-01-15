@@ -1,12 +1,10 @@
 const fs = require('fs')
-const Promise = require('promise')
-const async = require('async')
 
 function promiseFolderContent (path) {
 	return new Promise(
 		(resolve, reject) => fs.readdir(`${path}/`, (err, items) => {
 			if (err) {
-				// console.log (err)
+				// console.warn (err)
 				reject({ error: `Error reading folder ${path}` })
 			} else resolve(items)
 		})

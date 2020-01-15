@@ -1,28 +1,24 @@
-const fs = require('fs')
-const Promise = require('promise')
-const async = require('async')
-
-const readFolder = require('./readFolder.js')
+const { readFolder } = require('../helpers')
 
 async function getFullContent (path, reject) {
 	const content = []
 
 	const folders = await readFolder(path, content, reject)
-
-	for (const folder of folders) {
+	folders.forEach(async (folder) => {
 		const subfolders = await readFolder(
 			`${path}/${Object.keys(folder)[0]}`,
 			folder[Object.keys(folder)[0]],
 			reject
 		)
-		for (const subfolder of subfolders) {
+		subfolders.forEach(async (subfolder) => {
 			await readFolder(
 				`${path}/${Object.keys(folder)[0]}/${Object.keys(subfolder)[0]}/`,
 				subfolder[Object.keys(subfolder)[0]],
 				reject
 			)
-		}
-	}
+		})
+	})
+
 
 	return content
 }
