@@ -38,16 +38,16 @@ app.use((req, res, next) => {
 app.use('/blog', blog)
 app.use('/map', map)
 
-// Catch 404 and return JSON
+/** Catch 404 and return JSON */
 app.use((req, res) => res.status(404).json({ message: 'Not Found' }))
 
-// Error handler
+/** Error handler */
 app.use((err, req, res) => {
-	// Set locals, only providing error in development
+	/** Set locals, only providing error in development */
 	res.locals.message = err.message
 	res.locals.error = req.app.get('env') === 'development' ? err : {}
 
-	// Render the error page
+	/** Render the error page */
 	res.status(err.status || 500)
 	return res.json({ message: err.message })
 })
