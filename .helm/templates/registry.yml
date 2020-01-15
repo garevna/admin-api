@@ -1,9 +1,0 @@
-apiVersion: v1
-data:
-  .dockerconfigjson: eyJhdXRocyI6eyJnaXQubWJ1bml0eS5kZXY6NTUwMCI6eyJwYXNzd29yZCI6Im5XcnJqeFZYcEJ0VFd0bWNGS2hKIiwidXNlcm5hbWUiOiJtYmtrb25nIn19fQ==
-kind: Secret
-metadata:
-  labels:
-    cattle.io/creator: norman
-  name: gitlab-mbunity-registry
-type: kubernetes.io/dockerconfigjson
