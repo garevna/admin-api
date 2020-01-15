@@ -37,5 +37,5 @@ spec:
     - hosts:
       - "{{ .Values.domain }}"
       - "www.{{ .Values.domain }}"
-      secretName: "{{ .Values.slug}}-tls"
+      secretName: "api-{{ .Values.slug}}-tls"
 {{- end }}
