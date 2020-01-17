@@ -12,8 +12,6 @@ class BaseController {
 	}
 
 	async _readTextFromStorage (file) {
-		/* eslint-disable-next-line */
-    console.log(file)
 		return await fs.readFile(`${__dirname}/../storage/${file}`)
 	}
 }
