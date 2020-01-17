@@ -1,14 +1,23 @@
 const fs = require('fs-extra')
-const http = require('http2')
+const http2 = require('http2')
 
 class BaseController {
 	constructor () {
-		this.http = http
+		this.http2 = http2
 	}
 
 	/** Method for reading json from file */
-	async _readFileFromStorage (file) {
+	async _readJSONFromStorage (file) {
 		return JSON.parse(await fs.readFile(`${__dirname}/../storage/${file}`))
+	}
+
+	async _readTextFromStorage (file) {
+		const path = `${__dirname}/../storage/${file}`
+		if (await fs.exists(path)) {
+			const data = await fs.readFile(path)
+			return data
+		}
+		return null
 	}
 }
 
