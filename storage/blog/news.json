@@ -3,7 +3,7 @@
     "source": "news.com.au",
     "date": "19.04.2018",
     "title": "Broadband start-up completes initial fibre rollout in parts of Melbourne",
-    "logo": "https://dgtek-frontend.herokuapp.com/img/dgtek-in-media/_news_com_au.svg",
+    "logo": "/img/dgtek-in-media/_news_com_au.svg",
     "ref": "http://www.news.com.au/technology/online/broadband-startup-completes-initial-fibre-rollout-in-parts-of-melbourne/news-story/24ce37c4aa704843abb5b70f5482bcba"
   },
   {
@@ -17,21 +17,21 @@
     "source": "Whirlpool forum",
     "date": "2.12.2019",
     "title": "Can Lightning Broadband / DGtek beat NBN?",
-    "logo": "https://dgtek-frontend.herokuapp.com/img/dgtek-in-media/_whirlpool.svg",
+    "logo": "/img/dgtek-in-media/_whirlpool.svg",
     "ref": "https://forums.whirlpool.net.au/archive/2558739?__cf_chl_jschl_tk__=1a7c7a4ddb2a3f0663d38db3b5eecb73195b17f1-1578731614-0-AUr5EzFr7aT1IPSUDUphvzmlIDu93EKaq32V8RHBVqOlidr4k874bbF-3bM4aHt5mMgkpZTPI8fpNCg_Xj66Lx4VMmGRsaXAvvigxjahIdd2orra3XUDt3VucDliOWSsqIFqlqp-5rCOsPqqL6UJFbdxdaXN2hJWFejYhlPd9rApFzvBHzVukyfq4hDGWhCr3-iHEcRH9eVEJatlCHTsKne09bam6TdAAV7FEEnt19GCz2NMvBcFLLcvL1kgFX_oiNG6KuGigcYX6198ePIo8PRSkDmQEJaV0wri5cdo1Cj5yGYB5n519JGj-_RpDpkwe5q42A1Bepfp8fSwJHVxxWo"
   },
   {
     "source": "Reckoner",
     "date": "15.08.2016",
     "title": "Melbourne based DGtek starts offering gigabit fibre to SE suburbs",
-    "logo": "https://dgtek-frontend.herokuapp.com/img/dgtek-in-media/_r.svg",
+    "logo": "/img/dgtek-in-media/_r.svg",
     "ref": "https://reckoner.com.au/news/melbourne-based-dgtek-starts-offering-gigabit-fibre-to-se-suburbs/"
   },
   {
     "source": "reddit",
     "date": "15.08.2016",
     "title": "Ten times faster than NBN: DGtek brings gigabit fibre to Aussie suburbs",
-    "logo": "https://dgtek-frontend.herokuapp.com/img/dgtek-in-media/_reddit.svg",
+    "logo": "/img/dgtek-in-media/_reddit.svg",
     "ref": "https://www.reddit.com/r/australia/comments/4xrhrh/ten_times_faster_than_nbn_dgtek_brings_gigabit/"
   },
   {
@@ -45,35 +45,35 @@
     "source": "upstart",
     "date": "13.09.2016",
     "title": "Bypassing the NBN",
-    "logo": "https://dgtek-frontend.herokuapp.com/img/dgtek-in-media/_upstar.svg",
+    "logo": "/img/dgtek-in-media/_upstar.svg",
     "ref": "https://www.upstart.net.au/bypassing-the-nbn/"
   },
   {
     "source": "Daily Telegraph",
     "date": "19.08.2016",
     "title": "The little Aussie start-ups taking on the NBN",
-    "logo": "https://dgtek-frontend.herokuapp.com/img/dgtek-in-media/_daily_telegraph.svg",
+    "logo": "/img/dgtek-in-media/_daily_telegraph.svg",
     "ref": "https://www.dailytelegraph.com.au/technology/the-little-aussie-startups-taking-on-the-nbn/news-story/1dfbf198eb611584c43accdb48d16711"
   },
   {
     "source": "ABC",
     "date": "1.03.2018",
     "title": "NBN facing irrelevance in cities as competitors build faster, cheaper alternative",
-    "logo": "https://dgtek-frontend.herokuapp.com/img/dgtek-in-media/_news.svg",
+    "logo": "/img/dgtek-in-media/_news.svg",
     "ref": "http://www.abc.net.au/news/2018-02-28/nbn-faces-irrelevance-fast-networks-telstra-optus-tpg-opticom/9493230"
   },
   {
     "source": "lifehacker",
     "date": "15.08.2016",
     "title": "DGtek's Unlimited Broadband Plan Delivers Speeds Up To Ten Times Faster Than The NBN",
-    "logo": "https://dgtek-frontend.herokuapp.com/img/dgtek-in-media/_lifehacker.svg",
+    "logo": "/img/dgtek-in-media/_lifehacker.svg",
     "ref": "https://www.lifehacker.com.au/2016/08/ten-times-faster-than-nbn-dgtek-is-bringing-gigabyte-fibre-to-aussie-suburbs/"
   },
   {
     "source": "lifehacker",
     "date": "25.06.2018",
     "title": "Five Viable Alternatives To The NBN",
-    "logo": "https://dgtek-frontend.herokuapp.com/img/dgtek-in-media/_lifehacker.svg",
+    "logo": "/img/dgtek-in-media/_lifehacker.svg",
     "ref": "https://www.lifehacker.com.au/2018/03/five-viable-alternatives-to-the-nbn/"
   },
   {
@@ -87,7 +87,7 @@
     "source": "itwire",
     "date": "26.06.2018",
     "title": "St Kilda landmark gets gigabit fibre",
-    "logo": "https://dgtek-frontend.herokuapp.com/img/dgtek-in-media/_itwire.svg",
+    "logo": "/img/dgtek-in-media/_itwire.svg",
     "ref": "https://www.itwire.com/telecoms-and-nbn/83369-st-kilda-landmark-gets-gigabit-fibre.html"
   },
   {

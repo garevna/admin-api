@@ -1,0 +1,16 @@
+In this article we have explained a few simple ways for internet users to help increase their Wi-Fi speed and security by following these simple steps. If you feel that your internet is not working at it’s optimal speed or want to know how many devices are connected to your network, then this article is for you.
+
+If you are facing issues such as drop-outs, error messages, slow data transfer or network congestion, you may find some of these tips helpful. However, before you try the tips below, we recommend running a network speed test in order to establish a benchmark.
+
+You can run a speed test by visiting the DGtek website at dgtek.net and scrolling to the Speed Test section of the homepage.
+
+Restart the Router.
+Safely remove the power cord from the back of the router or turn the modem off at the powerpoint for one full minute, then plug it in and turn it back on.
+
+Check the Router Location.
+Ensure that your router is located in a central, open space in the house, not surrounded by any thick walls or big objects which might obstruct the signal.
+
+Appliances.
+Certain household objects such as microwave ovens, televisions, hot water systems and fish tanks can interfere with the Wi-Fi signal of the house. Metallic surfaces like mirrors or fridge doors will also impact the quality of your signal.
+
+In the event that the router location, household appliances or thick walls are causing signal interference, speak to a Pineapple Net service representative about installing a Mesh Wi-Fi extender.
