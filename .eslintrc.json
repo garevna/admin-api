@@ -1,25 +1,24 @@
 {
-    "env": {
-        "node": true
-    },
-    "parserOptions": {
-        "ecmaVersion": 2018
-    },
-    "extends": "airbnb-base",
-    "rules": {
-        "strict": "off",
-        "semi": ["error", "never"],
-        "comma-dangle": ["error", "never"],
-        "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
-        "space-before-function-paren": ["error", { "anonymous": "never", "named": "always" }],
-        "class-methods-use-this": "off",
-        "object-curly-newline": ["error", { "ImportDeclaration": "never", "ExportDeclaration": "never" }],
-        "global-require": "off",
-        "no-param-reassign": ["error", { "props": false }],
-        "no-console": ["error", {"allow": ["warn", "error"]}],
-        "indent": ["error", "tab"],
-        "no-tabs": ["error", { "allowIndentationTabs": true }],
-        "no-plusplus": "off",
-        "no-underscore-dangle": "off"
-    }
+  "env": {
+      "node": true
+  },
+  "parserOptions": {
+      "ecmaVersion": 2018
+  },
+  "extends": "airbnb-base",
+  "rules": {
+      "strict": "off",
+      "semi": ["error", "never"],
+      "comma-dangle": ["error", "never"],
+      "no-unused-vars": ["error", { "vars": "all", "args": "after-used", "ignoreRestSiblings": false }],
+      "space-before-function-paren": ["error", { "anonymous": "never", "named": "always" }],
+      "class-methods-use-this": "off",
+      "object-curly-newline": ["error", { "ImportDeclaration": "never", "ExportDeclaration": "never" }],
+      "global-require": "off",
+      "no-param-reassign": ["error", { "props": false }],
+      "no-console": ["error", {"allow": ["warn", "error"]}],
+      "no-underscore-dangle": ["error", { "enforceInMethodNames": false, "allowAfterThis": true }],
+      "no-plusplus": "off",
+      "max-len": ["error", 140]
   }
+}
