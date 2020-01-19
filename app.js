@@ -33,7 +33,6 @@ app.use((req, res, next) => {
 	next()
 })
 
-
 /** Set Routes */
 app.use('/blog', blog)
 app.use('/map', map)
