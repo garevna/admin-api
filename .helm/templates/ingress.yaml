@@ -17,6 +17,7 @@ metadata:
       proxy_hide_header X-Powered-By;
       server_tokens off;
     nginx.ingress.kubernetes.io/limit-rpm: "{{ .Values.ingress.rateLimit }}"
+    nginx.ingress.kubernetes.io/enable-cors: "true"
 spec:
   rules:
     - host: "{{ .Values.domain }}"

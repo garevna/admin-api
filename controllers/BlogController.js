@@ -10,7 +10,9 @@ class BlogController extends BaseController {
 	}
 
 	async file (req, res) {
-		return res.send(await this._readTextFromStorage(`blog/content/${req.params.file}`))
+		const fileData = await this._readTextFromStorage(`blog/content/${req.params.file}`)
+		if (!fileData) return res.send(this.http2.constants.HTTP_STATUS_NOT_FOUND)
+		return res.send(fileData)
 	}
 }
 
