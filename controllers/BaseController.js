@@ -6,7 +6,6 @@ class BaseController {
 		this.http = http
 	}
 
-	/** Method for reading json from file */
 	async _readJSONFromStorage (file) {
 		return JSON.parse(await fs.readFile(`${__dirname}/../storage/${file}`))
 	}
