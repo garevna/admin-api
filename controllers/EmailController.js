@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer')
+const { validationResult } = require('express-validator')
 const BaseController = require('./BaseController')
 
 class EmailController extends BaseController {
@@ -18,7 +19,8 @@ class EmailController extends BaseController {
   }
 
   create (req, res) {
-    if (!req.body.email || !this.validMail(req.body.email)) { return res.json({ error: 'Invalid email' }) }
+    const errors = validationResult(req)
+    if (!errors.isEmpty()) return res.status(422).json({ errors: errors.array() })
 
     const params = {
       email: req.body.email,
@@ -37,11 +39,8 @@ class EmailController extends BaseController {
         <h4>Message:</h4>
         <p>${req.body.message}</p>
       `
-    return this.sendEmail(params, res)
-  }
 
-  validMail (email) {
-    return Boolean(email.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/))
+    return this.sendEmail(params, res)
   }
 
   async sendEmail (params, res) {
