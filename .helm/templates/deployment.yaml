@@ -21,7 +21,10 @@ spec:
       imagePullSecrets:
         - name: gitlab-mbunity-registry
       containers:
-        - name: {{ .Values.image.name }}
+        - envFrom:
+          - secretRef:
+              name: dgtek-secrets
+          name: {{ .Values.image.name }}
           image: "{{ .Values.image.repository }}:{{ .Chart.AppVersion }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           livenessProbe:
