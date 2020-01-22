@@ -5,7 +5,8 @@
     "url": "https://medium.com/@dgtek/do-you-live-in-one-of-these-7-melbourne-suburbs-eef810439fe5",
     "data": "03.01.20",
     "author": "",
-    "author_ava": ""
+    "author_ava": "",
+    "picture": ""
   },
   {
     "title": "What is Fiber Optic Broadband and Can I Get it in My Home?",
@@ -13,7 +14,8 @@
     "file": "text-01.txt",
     "data": "03.01.20",
     "author": "",
-    "author_ava": ""
+    "author_ava": "",
+    "picture": ""
   },
   {
     "title": "Troubleshooting your Wi-Fi signal: objects that may be interfering",
@@ -21,14 +23,16 @@
     "file": "text-02.txt",
     "data": "03.01.20",
     "author": "",
-    "author_ava": ""
+    "author_ava": "",
+    "picture": ""
   },
   {
     "title": "Say hello to the new Gmail with self-destructing messages, email snoozing and more",
-    "type": "url",
-    "url": "https://dgtek.net/blog/blog-article",
+    "type": "file",
+    "file": "text-03.txt",
     "data": "03.01.20",
     "author": "",
-    "author_ava": ""
+    "author_ava": "",
+    "picture": ""
   }
 ]
