@@ -18,8 +18,29 @@ class EmailController extends BaseController {
     })
   }
 
-  validMail (email) {
-    return Boolean(email.match(/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/))
+  create (req, res) {
+    const errors = validationResult(req)
+    if (!errors.isEmpty()) return res.status(422).json({ errors: errors.array() })
+
+    const params = {
+      email: req.body.email,
+      username: req.body.username || req.body.name || 'guest',
+      subject: req.body.subject || 'DGTek',
+      html: req.body.html || req.body.text || 'Tanks for your message'
+    }
+
+    this.sendEmail(params, res)
+
+    params.email = 'info@dgtek.net'
+    params.subject = 'Contact info'
+    params.html = `<h3>user: ${params.username}</h3>
+        <p>phone: ${req.body.phone}</p>
+        <p>email: ${req.body.email}</p>
+        <h4>Message:</h4>
+        <p>${req.body.message}</p>
+      `
+
+    return this.sendEmail(params, res)
   }
 
   sendEmail (params) {

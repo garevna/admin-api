@@ -2,8 +2,11 @@ const router = require('express').Router()
 
 /** Controllers */
 const { EmailController } = require('../controllers')
+/** Requests */
+const { MailRequest } = require('../requests')
 
 /** Routes */
+<<<<<<< HEAD
 router.post('/', (req, res) => {
   if (!req.body.email || !EmailController.validMail(req.body.email)) {
     return res.json({ error: 'Invalid email' })
@@ -30,5 +33,8 @@ router.post('/', (req, res) => {
 
   return res.sendStatus(200)
 })
+=======
+router.post('/', MailRequest.validate(), (req, res) => EmailController.create(req, res))
+>>>>>>> f2bcdbdb525703ef0f261d226991c7b5b7509b90
 
 module.exports = router
