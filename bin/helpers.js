@@ -53,7 +53,7 @@ exports.normalizePort = function(val) {
  * Event listener for HTTP server "listening" event.
  */
 
-exports.onListening = function() {
+exports.onListening = function(server) {
   const addr = server.address()
   const bind = typeof addr === 'string'
     ? `pipe ${addr}`
