@@ -5,7 +5,7 @@
 /**
  * Event listener for HTTP server "error" event.
 */
-exports.onError = function(error) {
+exports.onError = function(error, port) {
   if (error.syscall !== 'listen') {
     throw error
   }
