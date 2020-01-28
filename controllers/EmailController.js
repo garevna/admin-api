@@ -1,11 +1,10 @@
 const nodemailer = require('nodemailer')
-const { validationResult } = require('express-validator')
-const BaseController = require('./BaseController')
 
-class EmailController extends BaseController {
+const { ControllerFactory } = require('../lib')
+const { generateHTMLFromTemplate } = require('../helpers')
+
+class EmailController {
   constructor () {
-    super()
-
     this.transport = nodemailer.createTransport({
       host: 'smtp.gmail.com',
       port: 587,
@@ -18,39 +17,28 @@ class EmailController extends BaseController {
     })
   }
 
-  create (req, res) {
-    const errors = validationResult(req)
-    if (!errors.isEmpty()) return res.status(422).json({ errors: errors.array() })
+  async create (req, res) {
+    const { email, name, phone, message } = req.body
+    /** Send Email To User */
+    const subject = 'DGTEK.NET - Thank You For Contacting Us'
+    const userParams = { email, name, subject, phone, message }
+    const userHtml = await generateHTMLFromTemplate(`${__dirname}/../templates/userMail.hbs`, userParams)
+    await this.sendEmail({ ...userParams, html: userHtml })
 
-    const params = {
-      email: req.body.email,
-      username: req.body.username || req.body.name || 'guest',
-      subject: req.body.subject || 'DGTek',
-      html: req.body.html || req.body.text || 'Tanks for your message'
-    }
+    /** Send Email To Support */
+    const supportParams = { email: 'dgtek.noreply@gmail.com', subject: `Contact info - ${email}`, message, phone }
+    const supportHtml = await generateHTMLFromTemplate(`${__dirname}/../templates/supportMail.hbs`, supportParams)
+    await this.sendEmail({ ...supportParams, html: supportHtml })
 
-    this.sendEmail(params, res)
-
-    params.email = 'info@dgtek.net'
-    params.subject = 'Contact info'
-    params.html = `<h3>user: ${params.username}</h3>
-        <p>phone: ${req.body.phone}</p>
-        <p>email: ${req.body.email}</p>
-        <h4>Message:</h4>
-        <p>${req.body.message}</p>
-      `
-
-    return this.sendEmail(params, res)
+    /** Return JSON message */
+    return res.json({ message: 'Email sent successfully' })
   }
 
-  sendEmail (params) {
-    this.transport.sendMail({
-      from: process.env.GMAIL,
-      to: params.email,
-      subject: params.subject,
-      html: params.html
-    })
+  async sendEmail (params) {
+    const { email, subject, html } = params
+    const info = await this.transport.sendMail({ from: process.env.GMAIL, to: email, subject, html })
+    return info
   }
 }
 
-module.exports = new EmailController()
+module.exports = new ControllerFactory(EmailController)

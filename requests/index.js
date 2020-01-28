@@ -1,3 +1,3 @@
 module.exports = {
-  MailRequest: require('./MailRequest')
+  EmailRequest: require('./EmailRequest')
 }

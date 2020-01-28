@@ -1,7 +1,9 @@
+const { ControllerFactory } = require('../lib')
+
 class HomeController {
   async index (req, res) {
-    return res.json({ name: 'Maxim' })
+    return res.json({ message: 'api' })
   }
 }
 
-module.exports = new HomeController()
+module.exports = new ControllerFactory(HomeController)

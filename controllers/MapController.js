@@ -1,13 +1,14 @@
-const BaseController = require('./BaseController')
+const { ControllerFactory } = require('../lib')
+const { readJSONFromStorage } = require('../helpers')
 
-class MapController extends BaseController {
+class MapController {
   async polygons (req, res) {
-    return res.json(await this._readJSONFromStorage('map/polygons.json'))
+    return res.json(await readJSONFromStorage('map/polygons.json'))
   }
 
   async points (req, res) {
-    return res.json(await this._readJSONFromStorage('map/points.json'))
+    return res.json(await readJSONFromStorage('map/points.json'))
   }
 }
 
-module.exports = new MapController()
+module.exports = new ControllerFactory(MapController)

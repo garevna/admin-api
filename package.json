@@ -1,7 +1,7 @@
 {
   "name": "dgtek-frontend-api",
   "version": "1.0.0",
-  "description": "A simple Node app width fs and ws",
+  "description": "A simple Node app",
   "main": "server.js",
   "scripts": {
     "start": "node ./bin/www",
@@ -14,8 +14,12 @@
     "express-validator": "^6.3.1",
     "express-ws": "^4.0.0",
     "fs-extra": "^8.1.0",
+    "handlebars": "^4.7.2",
     "morgan": "^1.9.1",
     "nodemailer": "^6.4.2",
+    "pg": "^7.17.1",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "^5.21.3",
     "speedtest-net": "^1.6.0",
     "web-socket-router": "^1.6.8",
     "ws": "^7.2.1"
@@ -36,6 +40,7 @@
     "eslint": "^6.8.0",
     "eslint-config-airbnb-base": "^14.0.0",
     "eslint-plugin-import": "^2.20.0",
-    "nodemon": "^2.0.2"
+    "nodemon": "^2.0.2",
+    "sequelize-cli": "^5.5.1"
   }
 }
