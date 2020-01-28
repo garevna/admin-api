@@ -1,0 +1,29 @@
+version: "3"
+
+services:
+  dgtek_api:
+    build: ./
+    container_name: dgtek_api
+    command: yarn nodemon
+    volumes:
+      - ./:/usr/app
+    ports:
+      - 3000:3000
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:12-alpine
+    container_name: dgtek_postgres
+    restart: always
+    ports:
+      - 5432:5432
+    volumes:
+      - ../postgres:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: ${DB_DATABASE}
+      POSTGRES_USER: ${DB_USERNAME}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+
