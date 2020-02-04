@@ -8,9 +8,9 @@ ingress:
 uploadSize: 5M
 
 image:
-  repository: git.mbunity.dev:5500/dgtek/frontend-api
+  repository: git.mbunity.dev:5500/dgtek/api
   pullPolicy: IfNotPresent
-  name: frontend-api
+  name: api
   port: 3000
   resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
