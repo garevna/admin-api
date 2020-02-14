@@ -8,7 +8,7 @@ ingress:
 uploadSize: 5M
 
 image:
-  repository: git.mbunity.dev:5500/dgtek/api
+  repository: git.nitunity.io:5500/dgtek/api
   pullPolicy: IfNotPresent
   name: api
   port: 3000
