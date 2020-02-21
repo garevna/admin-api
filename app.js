@@ -4,7 +4,8 @@ const logger = require('morgan')
 const expressWs = require('express-ws')
 
 /** Web Routes */
-const { web, api } = require('./routes')
+// const { web, api } = require('./routes')
+const { blog, news, faq, mail, map } = require('./routes')
 
 /** Create Express App */
 const app = express()
@@ -33,9 +34,21 @@ app.use((req, res, next) => {
   next()
 })
 
+app.use('/', express.static('public'))
+
+app.use('/images', express.static('storage/blog/images'))
+app.use('/avatars', express.static('storage/blog/avatars'))
+app.use('/logos', express.static('storage/news/logos'))
+
 /** Set Routes */
-app.use('/', web)
-app.use('/admin', api)
+// app.use('/', web)
+// app.use('/admin', api)
+app.use('/blog', blog)
+app.use('/news', news)
+app.use('/faq', faq)
+app.use('/mail', mail)
+app.use('/map', map)
+
 
 /** Catch 404 and return JSON */
 app.use((req, res) => res.status(404).json({ message: 'Not Found' }))

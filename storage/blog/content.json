@@ -1,38 +1,49 @@
-[
-  {
-    "title": "Fibre To The Home Now In These 7 Melbourne Suburbs And No It’s Not The NBN",
-    "type": "url",
-    "url": "https://medium.com/@dgtek/do-you-live-in-one-of-these-7-melbourne-suburbs-eef810439fe5",
-    "data": "03.01.20",
-    "author": "",
-    "author_ava": "",
-    "picture": ""
+{
+  "data":[
+    {
+      "id":1,
+      "file":"1581861065107.html",
+      "title":"What is Fiber Optic Broadband and Can I Get it in My Home?",
+      "published_at":"2020-01-03",
+      "author":"Emma Hoffman",
+      "logo_user":"1581751078299.jpg",
+      "logo":"1581861092897.jpg",
+      "slug":"what-is-fiber-optic-broadband-and-can-i-get-it-in-my-home"
+    },
+    {
+      "id":3,
+      "file":"1579893597248.html",
+      "title":"Troubleshooting your Wi-Fi signal: objects that may be interfering",
+      "published_at":"2020-01-28",
+      "author":"Emma Hoffman",
+      "logo_user":"1581751078299.jpg",
+      "logo":"1581885913229.jpg",
+      "slug":"troubleshooting-your-wi-fi-signal-objects-that-may-be-interfering"
+    },
+    {
+      "id":4,
+      "file":"1579893634072.html",
+      "title":"Say hello to the new Gmail with self-destructing messages, email snoozing and more",
+      "published_at":"2020-01-19",
+      "author":"Emma Hoffman",
+      "logo_user":"1581751078299.jpg",
+      "logo":"1581915093658.jpg",
+      "slug":"say-hello-to-the-new-Gmail-with-self-destructing-messages-email-snoozing-and-more"
+    }
+  ],
+  "links":{
+    "first":"https://dka.dgtek.net/api/frontend/posts?page=1",
+    "last":"https://dka.dgtek.net/api/frontend/posts?page=1",
+    "next":null,
+    "prev":null
   },
-  {
-    "title": "What is Fiber Optic Broadband and Can I Get it in My Home?",
-    "type": "file",
-    "file": "text-01.txt",
-    "data": "03.01.20",
-    "author": "",
-    "author_ava": "",
-    "picture": ""
-  },
-  {
-    "title": "Troubleshooting your Wi-Fi signal: objects that may be interfering",
-    "type": "file",
-    "file": "text-02.txt",
-    "data": "03.01.20",
-    "author": "",
-    "author_ava": "",
-    "picture": ""
-  },
-  {
-    "title": "Say hello to the new Gmail with self-destructing messages, email snoozing and more",
-    "type": "file",
-    "file": "text-03.txt",
-    "data": "03.01.20",
-    "author": "",
-    "author_ava": "",
-    "picture": ""
+  "meta":{
+    "current_page":1,
+    "from":1,
+    "last_page":1,
+    "path":"https://dka.dgtek.net/api/frontend/posts",
+    "per_page":20,
+    "to":2,
+    "total":2
   }
-]
+}

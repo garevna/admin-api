@@ -1,0 +1,121 @@
+{
+  "data":[
+    {
+      "id":14,
+      "title":"Fibre To The Home Now In These 7 Melbourne Suburbs And No It\u2019s Not The NBN",
+      "source":"https:\/\/medium.com\/@dgtek\/do-you-live-in-one-of-these-7-melbourne-suburbs-eef810439fe5",
+      "ref":"https:\/\/medium.com\/@dgtek\/do-you-live-in-one-of-these-7-melbourne-suburbs-eef810439fe5",
+      "logo":"https:\/\/dka.dgtek.net\/storage\/news\/14.png",
+      "published_at":"2020-01-03 00:00:00"
+    },
+    {
+      "id":13,
+      "title":"St Kilda landmark gets gigabit fibre",
+      "source":"https:\/\/www.itwire.com\/telecoms-and-nbn\/83369-st-kilda-landmark-gets-gigabit-fibre.html",
+      "ref":"https:\/\/www.itwire.com\/telecoms-and-nbn\/83369-st-kilda-landmark-gets-gigabit-fibre.html",
+      "logo":"https:\/\/dka.dgtek.net\/storage\/news\/13.png",
+      "published_at":"2018-06-26 00:00:00"
+    },{
+      "id":11,
+      "title":"Five Viable Alternatives To The NBN",
+      "source":"https:\/\/www.lifehacker.com.au\/2018\/03\/five-viable-alternatives-to-the-nbn\/",
+      "ref":"https:\/\/www.lifehacker.com.au\/2018\/03\/five-viable-alternatives-to-the-nbn\/",
+      "logo":"https:\/\/dka.dgtek.net\/storage\/news\/11.png",
+      "published_at":"2018-06-25 00:00:00"
+    },
+    {
+      "id":10,
+      "title":"DGtek's Unlimited Broadband Plan Delivers Speeds Up To Ten Times Faster Than The NBN",
+      "source":"https:\/\/www.lifehacker.com.au\/2016\/08\/ten-times-faster-than-nbn-dgtek-is-bringing-gigabyte-fibre-to-aussie-suburbs\/",
+      "ref":"https:\/\/www.lifehacker.com.au\/2016\/08\/ten-times-faster-than-nbn-dgtek-is-bringing-gigabyte-fibre-to-aussie-suburbs\/",
+      "logo":"https:\/\/dka.dgtek.net\/storage\/news\/10.png",
+      "published_at":"2016-08-15 00:00:00"
+    },
+    {
+      "id":9,
+      "title":"NBN facing irrelevance in cities as competitors build faster, cheaper alternative",
+      "source":"https:\/\/www.abc.net.au\/news\/2018-02-28\/nbn-faces-irrelevance-fast-networks-telstra-optus-tpg-opticom\/9493230",
+      "ref":"https:\/\/www.abc.net.au\/news\/2018-02-28\/nbn-faces-irrelevance-fast-networks-telstra-optus-tpg-opticom\/9493230",
+      "logo":"https:\/\/dka.dgtek.net\/storage\/news\/9.jpg",
+      "published_at":"2018-03-01 00:00:00"
+    },
+    {
+      "id":8,
+      "title":"The little Aussie start-ups taking on the NBN",
+      "source":"https:\/\/www.dailytelegraph.com.au\/technology\/the-little-aussie-startups-taking-on-the-nbn\/news-story\/1dfbf198eb611584c43accdb48d16711",
+      "ref":"https:\/\/www.dailytelegraph.com.au\/technology\/the-little-aussie-startups-taking-on-the-nbn\/news-story\/1dfbf198eb611584c43accdb48d16711",
+      "logo":"https:\/\/dka.dgtek.net\/storage\/news\/8.png",
+      "published_at":"2016-08-19 00:00:00"
+    },
+    {
+      "id":7,
+      "title":"Bypassing the NBN",
+      "source":"https:\/\/www.upstart.net.au\/bypassing-the-nbn\/",
+      "ref":"https:\/\/www.upstart.net.au\/bypassing-the-nbn\/",
+      "logo":"https:\/\/dka.dgtek.net\/storage\/news\/7.png",
+      "published_at":"2016-09-13 00:00:00"
+    },
+    {
+      "id":6,
+      "title":"DGtek promo for Melbourne (Australia)",
+      "source":"https:\/\/www.youtube.com\/watch?v=cxnHL_r3rMc",
+      "ref":"https:\/\/www.youtube.com\/watch?v=cxnHL_r3rMc",
+      "logo":"https:\/\/dka.dgtek.net\/storage\/news\/6.png",
+      "published_at":"2016-02-28 00:00:00"
+    },
+    {
+      "id":5,
+      "title":"Ten times faster than NBN: DGtek brings gigabit fibre to Aussie suburbs",
+      "source":"https:\/\/www.reddit.com\/r\/australia\/comments\/4xrhrh\/ten_times_faster_than_nbn_dgtek_brings_gigabit\/",
+      "ref":"https:\/\/www.reddit.com\/r\/australia\/comments\/4xrhrh\/ten_times_faster_than_nbn_dgtek_brings_gigabit\/",
+      "logo":"https:\/\/dka.dgtek.net\/storage\/news\/5.png","published_at":"2016-06-15 00:00:00"
+    },
+    {
+      "id":4,
+      "title":"Melbourne based DGtek starts offering gigabit fibre to SE suburbs",
+      "source":"https:\/\/reckoner.com.au\/news\/melbourne-based-dgtek-starts-offering-gigabit-fibre-to-se-suburbs\/",
+      "ref":"https:\/\/reckoner.com.au\/news\/melbourne-based-dgtek-starts-offering-gigabit-fibre-to-se-suburbs\/",
+      "logo":"https:\/\/dka.dgtek.net\/storage\/news\/4.png",
+      "published_at":"2016-08-15 00:00:00"
+    },
+    {
+      "id":3,
+      "title":"Broadband start-up completes initial fibre rollout in parts of Melbourne",
+      "source":"https:\/\/www.news.com.au\/technology\/online\/broadband-startup-completes-initial-fibre-rollout-in-parts-of-melbourne\/news-story\/24ce37c4aa704843abb5b70f5482bcba",
+      "ref":"https:\/\/www.news.com.au\/technology\/online\/broadband-startup-completes-initial-fibre-rollout-in-parts-of-melbourne\/news-story\/24ce37c4aa704843abb5b70f5482bcba",
+      "logo":"https:\/\/dka.dgtek.net\/storage\/news\/3.png",
+      "published_at":"2018-04-19 00:00:00"
+    },
+    {
+      "id":2,
+      "title":"Can Lightning Broadband \/ DGtek beat NBN?",
+      "source":"https:\/\/forums.whirlpool.net.au",
+      "ref":"https:\/\/forums.whirlpool.net.au\/archive\/2558739?__cf_chl_jschl_tk__=6e9a3095a5e905ebd598cfd85d65a6b48c7602ef-1581528687-0-ARTmt4AMzl1C9rrjMxi-NKHkVeH9TJwLOlpLr6MLGQot8JhVBfEq_SLkwn7e2DIUBa2aUjg_PHsUYsXZzYhgsxdha9K_JEXVgNy0EyEIAxyMdjDH4ys9FYnj0K9rQUmasKdkx5qmL3GAl60XLnWiYBoCmzj1qltjx2UmVAJpdHHzxzE5Go_VzJJaKH2N5aPJS2FUjGV92Lxtzn_iUU0hGheRpSoplPRAKtlWrEAoe_znQI1MgIiuCgrQuqFZTA7SIV0oNmi3Lobz7sX4fL2SbfFlBESxNe8e66_CIbDdNVue6A5bNgapYK1ePQKFNA1xkaAuJsHL0WfqKKQRQcP1fzHML_6wf5DZgg7iM8TXCvB6",
+      "logo":"https:\/\/dka.dgtek.net\/storage\/news\/2.png",
+      "published_at":"2019-12-02 00:00:00"
+    },
+    {
+      "id":1,
+      "title":"Ten times faster than NBN: DGtek brings gigabit fibre to Aussie suburbs",
+      "source":"https:\/\/www.smh.com.au\/technology\/ten-times-faster-than-nbn-dgtek-brings-gigabit-fibre-to-aussie-suburbs-20160815-gqsfmu.html",
+      "ref":"https:\/\/www.smh.com.au\/technology\/ten-times-faster-than-nbn-dgtek-brings-gigabit-fibre-to-aussie-suburbs-20160815-gqsfmu.html",
+      "logo":"https:\/\/dka.dgtek.net\/storage\/news\/1.png",
+      "published_at":"2016-08-15 00:00:00"
+    }
+  ],
+  "links":{
+    "first":"https:\/\/dka.dgtek.net\/api\/frontend\/news?page=1",
+    "last":"https:\/\/dka.dgtek.net\/api\/frontend\/news?page=1",
+    "prev":null,
+    "next":null
+  },
+  "meta":{
+    "current_page":1,
+    "from":1,
+    "last_page":1,
+    "path":"https:\/\/dka.dgtek.net\/api\/frontend\/news",
+    "per_page":20,
+    "to":13,
+    "total":13
+  }
+}
