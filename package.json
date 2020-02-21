@@ -31,7 +31,7 @@
     "ws": "^7.2.1"
   },
   "engines": {
-    "node": "^12.x"
+    "node": "^13.x"
   },
   "repository": {
     "type": "git",
