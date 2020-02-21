@@ -6,6 +6,6 @@ const { EmailController } = require('../controllers')
 const { EmailRequest } = require('../requests')
 
 /** Routes */
-router.post('/', EmailRequest.validate(), (req, res) => EmailController.create(req, res))
+router.post('/', (req, res) => EmailController.create(req, res))
 
 module.exports = router
