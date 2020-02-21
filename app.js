@@ -5,7 +5,7 @@ const expressWs = require('express-ws')
 
 /** Web Routes */
 // const { web, api } = require('./routes')
-const { blog, news, faq, mail, map } = require('./routes')
+const { blog, news, faq } = require('./routes')
 
 /** Create Express App */
 const app = express()
@@ -46,8 +46,8 @@ app.use('/logos', express.static('storage/news/logos'))
 app.use('/blog', blog)
 app.use('/news', news)
 app.use('/faq', faq)
-app.use('/mail', mail)
-app.use('/map', map)
+// app.use('/mail', mail)
+// app.use('/map', map)
 
 
 /** Catch 404 and return JSON */
