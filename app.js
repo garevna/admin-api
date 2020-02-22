@@ -34,18 +34,18 @@ app.use((req, res, next) => {
   next()
 })
 
-app.use('/admin-api', express.static('public'))
+app.use('/', express.static('public'))
 
-app.use('/admin-api/images', express.static('storage/blog/images'))
-app.use('/admin-api/avatars', express.static('storage/blog/avatars'))
-app.use('/admin-api/logos', express.static('storage/news/logos'))
+app.use('/images', express.static('storage/blog/images'))
+app.use('/avatars', express.static('storage/blog/avatars'))
+app.use('/logos', express.static('storage/news/logos'))
 
 /** Set Routes */
 // app.use('/', web)
 // app.use('/admin', api)
-app.use('/admin-api/blog', blog)
-app.use('/admin-api/news', news)
-app.use('/admin-api/faq', faq)
+app.use('/blog', blog)
+app.use('/news', news)
+app.use('/faq', faq)
 // app.use('/mail', mail)
 // app.use('/map', map)
 
