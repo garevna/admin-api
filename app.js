@@ -34,7 +34,7 @@ app.use((req, res, next) => {
   next()
 })
 
-app.use('/', express.static('public'))
+console.log(__dirname)
 
 app.use('/images', express.static('storage/blog/images'))
 app.use('/avatars', express.static('storage/blog/avatars'))
