@@ -34,24 +34,24 @@ app.use((req, res, next) => {
   next()
 })
 
-app.use('/', express.static('public'))
+app.use('/admin-api', express.static('public'))
 
-app.use('/images', express.static('storage/blog/images'))
-app.use('/avatars', express.static('storage/blog/avatars'))
-app.use('/logos', express.static('storage/news/logos'))
+app.use('/admin-api/images', express.static('storage/blog/images'))
+app.use('/admin-api/avatars', express.static('storage/blog/avatars'))
+app.use('/admin-api/logos', express.static('storage/news/logos'))
 
 /** Set Routes */
 // app.use('/', web)
 // app.use('/admin', api)
-app.use('/blog', blog)
-app.use('/news', news)
-app.use('/faq', faq)
+app.use('/admin-api/blog', blog)
+app.use('/admin-api/news', news)
+app.use('/admin-api/faq', faq)
 // app.use('/mail', mail)
 // app.use('/map', map)
 
 
 /** Catch 404 and return JSON */
-app.use((req, res) => res.status(404).json({ message: 'Not Found' }))
+app.use((req, res) => res.status(404).json({ message: 'Not Found...' }))
 
 /** Error handler */
 app.use((err, req, res) => {
